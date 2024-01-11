@@ -1,0 +1,6 @@
+npx sequelize model:create --name User --attributes name:text,email:text,password:text
+npx sequelize model:create --name Theme --attributes name:text,img:text
+npx sequelize model:create --name Question --attributes theme_id:integer,content:text,img:text,right_answer:text,points:integer
+npx sequelize model:create --name Answer --attributes user_id:integer,question_id:integer
+
+npx sequelize seed:create --name user
