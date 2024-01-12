@@ -4,10 +4,10 @@ const Layout = require('./Layout')
 function FirstTheme({ title, questions, theme_id }) {
     return (
      <Layout title={title}> 
-     <h1>Фильмы по кадрам</h1>
+     <h1 style={{display: 'flex', justifyContent: 'center'}}>Фильмы по кадрам</h1>
      <div className='container'>
      {questions.map((question) => (
-          <div className="card" style={{width: '18rem'}}>
+          <div className="card" style={{width: '1600px'}}>
           
           <img src={question.img} className="card-img-top" alt="question" />
           <div className="card-body">
