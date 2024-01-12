@@ -1,9 +1,10 @@
 const React = require('react')
 const Layout = require('./Layout')
 
-function FirstTheme({ title, questions, theme_id }) {
+
+function FirstTheme({ title, questions, theme_id, user }) {
     return (
-     <Layout title={title}> 
+     <Layout title={title} user={user}> 
      <h1>Фильмы по кадрам</h1>
      <div className='container'>
      {questions.map((question) => (
