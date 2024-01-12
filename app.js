@@ -9,6 +9,7 @@ const PORT = 4000;
 
 
 
+
 app.use(express.urlencoded({extended: 'true'})) // middleware, который вскрыывает содержимое body в post
 app.use(ssr)
 
