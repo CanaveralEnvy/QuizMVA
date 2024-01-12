@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const MainPage = require('../components/MainPage');
-const { theme } = require('../db/models');
+const { Theme } = require('../db/models');
 
 router.get('/', async (req, res) => {
   try {
-    const themes = await theme.findAll();
+    const themes = await Theme.findAll();
     const html = res.renderComponent(MainPage, {
       title: 'Main page',
       themes,

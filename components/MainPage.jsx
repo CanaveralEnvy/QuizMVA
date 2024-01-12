@@ -5,7 +5,7 @@ const Layout = require('./Layout')
 function MainPage({ title, themes }) {
     return (
      <Layout title={title}> 
-     <h1>Heroes</h1>
+     <h1>Самый лучший квиз</h1>
             {themes.map((theme) =>(
                  <div key={theme.id}>
                 <h5>{theme.name}</h5>
