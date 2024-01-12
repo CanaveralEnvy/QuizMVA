@@ -8,7 +8,8 @@ function Layout({title, children }) {
         <link rel="stylesheet" href="/css/style.css" />
         <script src="/js/script.js" /> 
       </head>
-      <body>{children}</body>
+      <body>
+        <NavBar/>{children}</body>
     </html>
   );
 }
