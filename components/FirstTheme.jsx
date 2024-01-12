@@ -1,10 +1,12 @@
 const React = require('react')
 const Layout = require('./Layout')
 
-function FirstTheme({ title, questions, theme_id }) {
+
+function FirstTheme({ title, questions, theme_id, user }) {
     return (
      <Layout title={title}> 
      <h1 style={{display: 'flex', justifyContent: 'center'}}>Фильмы по кадрам</h1>
+
      <div className='container'>
      {questions.map((question) => (
           <div className="card" style={{width: '1600px'}}>

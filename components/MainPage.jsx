@@ -1,10 +1,10 @@
-const React = require('react')
-const Layout = require('./Layout')
+const React = require('react');
+const Layout = require('./Layout');
 
-
-function MainPage({ title, themes }) {
-    return (
-     <Layout title={title}> 
+function MainPage({ title, themes, user}) {
+  return (
+    <Layout title={title} user={user}>
+    
      <h1>Самый лучший квиз</h1>
      <div className='container' style={{display: 'flex', margin:'100px'}}>
      
@@ -21,4 +21,5 @@ function MainPage({ title, themes }) {
      );
     };
 
-    module.exports = MainPage
+module.exports = MainPage
+
