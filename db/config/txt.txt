@@ -4,3 +4,6 @@ npx sequelize model:create --name Question --attributes theme_id:integer,content
 npx sequelize model:create --name Answer --attributes user_id:integer,question_id:integer
 
 npx sequelize seed:create --name user
+npx sequelize seed:create --name theme
+npx sequelize seed:create --name question
+npx sequelize seed:create --name answer
