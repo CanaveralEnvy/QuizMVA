@@ -1,19 +1,30 @@
-const React = require('react')
-const Layout = require('./Layout')
+const React = require('react');
+const Layout = require('./Layout');
 
+function MainPage({ title, themes, user}) {
+  return (
+    <Layout title={title} user={user}>
+      <h1>Самый лучший квиз</h1>
+      <div
+        classNameName="container"
+        style={{ display: 'flex', margin: '100px' }}
+      >
+        {themes.map((theme) => (
+          <div
+            className="card text-bg-dark"
+            style={{ width: '900px', display: 'flex', margin: '10px' }}
+          >
+            <img src={theme.img} className="card-img" alt="..." />
+            <div className="card-img-overlay">
+              <h5 className="card-title" style={{ color: 'white' }}>
+                {theme.name}
+              </h5>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  );
+}
 
-function MainPage({ title, themes,user }) {
-    return (
-     <Layout title={title} user={user}> 
-     <h1>Самый лучший квиз</h1>
-            {themes.map((theme) =>(
-                 <div key={theme.id}>
-                <h5>{theme.name}</h5>
-                <h5>{theme.description}</h5>
-                <img src={theme.img} alt="hero" />
-            </div>) )}
-    </Layout> 
-     );
-    };
-
-    module.exports = MainPage
+module.exports = MainPage;
