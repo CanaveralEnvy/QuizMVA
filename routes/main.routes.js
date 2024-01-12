@@ -2,6 +2,7 @@ const router = require('express').Router();
 const MainPage = require('../components/MainPage');
 const { Theme } = require('../db/models');
 const { User } = require('../db/models');
+const { Question } = require('../db/models');
 
 router.get('/', async (req, res) => {
   try {
@@ -18,5 +19,11 @@ router.get('/', async (req, res) => {
     res.json({ message });
   }
 });
+// router.get('/:themeId', async (req, res) => {
+//   try {
+//     const { index, theme_id } = req.params;
+//     const questions = await Question.findAll({ where: { theme_id } });
+//   } catch ({ message }) {}
+// });
 
 module.exports = router;

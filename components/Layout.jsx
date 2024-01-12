@@ -25,7 +25,8 @@ function Layout({ title, children, user}) {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
           rel="stylesheet"
         ></link>
-        {/* <script src="/js/script.js" /> */}
+        <script defer src="/scripts/dir.js" /> 
+
       </head>
       <body>
         <NavBar scores = {scores} user={user}/>

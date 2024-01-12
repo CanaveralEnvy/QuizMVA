@@ -1,10 +1,11 @@
 const React = require('react')
 const Layout = require('./Layout')
 
-function FirstTheme({ title, questions, user }) {
+
+function FirstTheme({ title, questions, theme_id, user }) {
     return (
      <Layout title={title} user={user}> 
-     <h1>First Theme</h1>
+     <h1>Фильмы по кадрам</h1>
      <div className='container'>
      {questions.map((question) => (
           <div className="card" style={{width: '18rem'}}>
