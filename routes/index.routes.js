@@ -9,6 +9,6 @@ router.use('/', mainRouter)
 
 router.use('/firsttheme', firstRouter)
 
-router.use('/secondtheme', secondRouter)
+// router.use('/secondtheme', secondRouter)
 
 module.exports = router
