@@ -33,6 +33,15 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          theme_id: 1,
+          content: 'Угадайте фильм',
+          img: 'https://avatars.dzeninfra.ru/get-zen_doc/1705212/pub_5e884e884dc6b06f644df325_5e88594ab3115b1868a3f84b/scale_1200',
+          right_answer: 'обитель зла',
+          points: '10',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
