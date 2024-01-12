@@ -11,10 +11,10 @@ const indexRouter = require('./routes/index.routes')
 
 const PORT = 4000;
 
-app.get('/', (req, res) => {
-  const navbar = Re.renderToStaticMarkup(React.createElement(NavBar));
-  res.send(`<!DOCTYPE html>${navbar}`);
-});
+// app.get('/', (req, res) => {
+//   const navbar = Re.renderToStaticMarkup(React.createElement(NavBar));
+//   res.send(`<!DOCTYPE html>${navbar}`);
+// });
 
 
 app.use(express.urlencoded({extended: 'true'})) // middleware, который вскрыывает содержимое body в post
