@@ -12,7 +12,7 @@ function Layout({title, children }) {
         rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous"></link>
-        <script src="/js/script.js" /> 
+        <script defer src="/scripts/dir.js" /> 
       </head>
       <body>
         <NavBar/>{children}</body>
